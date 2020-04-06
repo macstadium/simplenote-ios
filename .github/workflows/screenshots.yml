@@ -3,8 +3,8 @@
 name: Screenshots
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, labeled, unlabeled]
+  push: # this is just for testing
+  #pull_request: types: [opened, synchronize, reopened, labeled, unlabeled]
 
 env:
   CONFIGURE_ENCRYPTION_KEY: ${{ secrets.CONFIGURE_ENCRYPTION_KEY }}
@@ -12,7 +12,7 @@ env:
 jobs:
   build:
     name: Build Application
-    if: contains(github.event.pull_request.labels.*.name, 'Needs Screenshots')
+    #if: contains(github.event.pull_request.labels.*.name, 'Needs Screenshots')
     runs-on: macos-latest
 
     steps:
