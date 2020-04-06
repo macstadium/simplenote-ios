@@ -597,9 +597,7 @@ end
 def screenshot_devices()
   [
     "iPhone Xs Max",
-    "iPhone 8 Plus",
-    "iPad Pro (12.9-inch) (2nd generation)",
-    "iPad Pro (12.9-inch) (3rd generation)",
+    "iPhone 8 Plus"
   ]
 end
 

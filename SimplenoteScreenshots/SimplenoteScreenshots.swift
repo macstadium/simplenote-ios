@@ -88,6 +88,8 @@ class SimplenoteScreenshots: XCTestCase {
         // menu.
         doneButton.tap()
 
+        return ()
+
         let backButton = app.buttons.matching(NSPredicate(format: "label = %@", "Notes")).firstMatch
         XCTAssertTrue(backButton.waitForExistence(timeout: 3))
         backButton.tap()
